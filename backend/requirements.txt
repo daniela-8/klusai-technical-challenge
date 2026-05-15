@@ -1,0 +1,37 @@
+# Core
+fastapi>=0.115.0
+uvicorn[standard]==0.34.2
+pydantic==2.11.3
+pydantic-settings==2.9.1
+python-dotenv==1.1.0
+
+# Database
+sqlalchemy==2.0.41
+aiosqlite==0.21.0
+
+# Vector store
+chromadb==1.0.7
+
+# AI / LLM
+openai==1.82.0
+tiktoken==0.9.0
+
+# Scraping
+httpx==0.28.1
+beautifulsoup4==4.13.4
+lxml==5.4.0
+playwright>=1.52.0
+
+# AI / LLM (Gemini native SDK for Search Grounding)
+google-genai>=1.14.0
+
+# Utilities
+python-multipart==0.0.20
+structlog==25.4.0
+tenacity==9.1.2
+python-dateutil==2.9.0.post0
+
+# Testing
+pytest==8.3.5
+pytest-asyncio==0.26.0
+pytest-httpx==0.35.0
