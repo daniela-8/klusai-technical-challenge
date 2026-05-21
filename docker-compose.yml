@@ -1,0 +1,43 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      # These override .env values in Docker — paths are relative to the container
+      - DATABASE_URL=sqlite+aiosqlite:///./data/klusai.db
+      - CHROMA_PERSIST_DIR=./data/chromadb
+      - FRONTEND_URL=http://localhost:3000
+      - USE_MOCK_FALLBACK=true
+    volumes:
+      # Persist the SQLite database and ChromaDB vector store across container restarts
+      - backend-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    environment:
+      - BACKEND_API_URL=http://backend:8000
+      - NODE_ENV=production
+    restart: unless-stopped
+
+volumes:
+  # Named volume so the SQLite DB and ChromaDB survive docker compose down
+  backend-data:
