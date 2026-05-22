@@ -14,8 +14,8 @@ services:
       - FRONTEND_URL=http://localhost:3000
       - USE_MOCK_FALLBACK=true
     volumes:
-      # Persist the SQLite database and ChromaDB vector store across container restarts
-      - backend-data:/app/data
+      # Use a bind mount so the repo's pre-populated SQLite DB and ChromaDB are used
+      - ./backend/data:/app/data
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
       interval: 15s
@@ -37,7 +37,3 @@ services:
       - BACKEND_API_URL=http://backend:8000
       - NODE_ENV=production
     restart: unless-stopped
-
-volumes:
-  # Named volume so the SQLite DB and ChromaDB survive docker compose down
-  backend-data:
