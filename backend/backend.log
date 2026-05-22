@@ -1,0 +1,185 @@
+INFO:     Will watch for changes in these directories: ['/Users/danielabig/Desktop/KlusAI-TechnicalChallenge/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [37096] using WatchFiles
+INFO:     Started server process [37098]
+INFO:     Waiting for application startup.
+2026-05-18T22:29:04.658567Z [info     ] starting_application           openai_available=True
+2026-05-18T22:29:04.676155Z [info     ] competitors_seeded             count=10
+2026-05-18T22:29:04.676765Z [info     ] application_ready
+INFO:     Application startup complete.
+2026-05-18T22:29:41.280973Z [info     ] scraping_started               competitor='Michael Page' url=https://www.michaelpage.fr/jobs/france
+HTTP Request: GET https://www.michaelpage.fr/jobs/france "HTTP/1.1 200 OK"
+2026-05-18T22:29:52.175604Z [info     ] michaelpage_parsed             jobs_found=0
+2026-05-18T22:29:52.175879Z [info     ] scraping_completed             competitor='Michael Page' job_count=0
+2026-05-18T22:29:52.176654Z [info     ] using_mock_data                competitor='Michael Page' reason=None
+2026-05-18T22:29:52.192685Z [info     ] competitor_scraped             competitor='Michael Page' jobs_added=1 total_jobs=4
+2026-05-18T22:29:52.198823Z [info     ] scraping_started               competitor=Hays url=https://www.hays.fr/
+2026-05-18T22:29:52.198914Z [info     ] spa_mock_fallback              competitor=Hays reason='JavaScript SPA — no static job listing HTML'
+2026-05-18T22:29:52.200198Z [info     ] scraping_completed             competitor=Hays job_count=0
+2026-05-18T22:29:52.200301Z [info     ] using_mock_data                competitor=Hays reason=None
+2026-05-18T22:29:52.204672Z [info     ] competitor_scraped             competitor=Hays jobs_added=1 total_jobs=3
+2026-05-18T22:29:52.208013Z [info     ] scraping_started               competitor='Robert Half' url=https://www.roberthalf.com/fr/fr/offres-emploi
+2026-05-18T22:29:52.208070Z [info     ] spa_mock_fallback              competitor='Robert Half' reason='JavaScript SPA — React app, no static HTML jobs'
+2026-05-18T22:29:52.208102Z [info     ] scraping_completed             competitor='Robert Half' job_count=0
+2026-05-18T22:29:52.208168Z [info     ] using_mock_data                competitor='Robert Half' reason=None
+2026-05-18T22:29:52.210225Z [info     ] competitor_scraped             competitor='Robert Half' jobs_added=1 total_jobs=3
+2026-05-18T22:29:52.213513Z [info     ] scraping_started               competitor='Robert Walters' url=https://www.robertwalters.fr/
+2026-05-18T22:29:52.213572Z [info     ] spa_mock_fallback              competitor='Robert Walters' reason='Returns 403 Forbidden for scrapers'
+2026-05-18T22:29:52.213602Z [info     ] scraping_completed             competitor='Robert Walters' job_count=0
+2026-05-18T22:29:52.213663Z [info     ] using_mock_data                competitor='Robert Walters' reason=None
+2026-05-18T22:29:52.217506Z [info     ] competitor_scraped             competitor='Robert Walters' jobs_added=1 total_jobs=3
+2026-05-18T22:29:52.221025Z [info     ] scraping_started               competitor=Uptoo url=https://uptoo.fr/
+2026-05-18T22:29:52.221071Z [info     ] spa_mock_fallback              competitor=Uptoo reason='JavaScript SPA — job paths return 404 to scrapers'
+2026-05-18T22:29:52.221107Z [info     ] scraping_completed             competitor=Uptoo job_count=0
+2026-05-18T22:29:52.221169Z [info     ] using_mock_data                competitor=Uptoo reason=None
+2026-05-18T22:29:52.223178Z [info     ] competitor_scraped             competitor=Uptoo jobs_added=1 total_jobs=3
+2026-05-18T22:29:52.226477Z [info     ] scraping_started               competitor=Rocket4Sales url=https://rocket4sales.com
+2026-05-18T22:29:52.226516Z [info     ] spa_mock_fallback              competitor=Rocket4Sales reason='JavaScript SPA — root domain, jobs not in static HTML'
+2026-05-18T22:29:52.226547Z [info     ] scraping_completed             competitor=Rocket4Sales job_count=0
+2026-05-18T22:29:52.226602Z [info     ] using_mock_data                competitor=Rocket4Sales reason=None
+2026-05-18T22:29:52.229186Z [info     ] competitor_scraped             competitor=Rocket4Sales jobs_added=1 total_jobs=2
+2026-05-18T22:29:52.232602Z [info     ] scraping_started               competitor='TPC Recrutement' url=https://www.tpcrecrutement.fr/
+2026-05-18T22:29:52.232651Z [info     ] spa_mock_fallback              competitor='TPC Recrutement' reason='Domain unreliable — using curated mock data'
+2026-05-18T22:29:52.232679Z [info     ] scraping_completed             competitor='TPC Recrutement' job_count=0
+2026-05-18T22:29:52.232736Z [info     ] using_mock_data                competitor='TPC Recrutement' reason=None
+2026-05-18T22:29:52.234555Z [info     ] competitor_scraped             competitor='TPC Recrutement' jobs_added=1 total_jobs=2
+2026-05-18T22:29:52.237541Z [info     ] scraping_started               competitor='Valorem Partners' url=https://www.valorempartners.com/offres/
+HTTP Request: GET https://www.valorempartners.com/offres/ "HTTP/1.1 200 OK"
+2026-05-18T22:29:52.991910Z [info     ] valorempartners_parsed         jobs_found=0
+2026-05-18T22:29:52.991989Z [info     ] scraping_completed             competitor='Valorem Partners' job_count=0
+2026-05-18T22:29:52.992211Z [info     ] using_mock_data                competitor='Valorem Partners' reason=None
+2026-05-18T22:29:52.995496Z [info     ] competitor_scraped             competitor='Valorem Partners' jobs_added=1 total_jobs=2
+2026-05-18T22:29:52.999850Z [info     ] scraping_started               competitor='CPA Partners' url=https://www.cpa-partners.fr/
+2026-05-18T22:29:52.999922Z [info     ] spa_mock_fallback              competitor='CPA Partners' reason='Domain unreliable — using curated mock data'
+2026-05-18T22:29:52.999967Z [info     ] scraping_completed             competitor='CPA Partners' job_count=0
+2026-05-18T22:29:53.000033Z [info     ] using_mock_data                competitor='CPA Partners' reason=None
+2026-05-18T22:29:53.003618Z [info     ] competitor_scraped             competitor='CPA Partners' jobs_added=1 total_jobs=2
+2026-05-18T22:29:53.008423Z [info     ] scraping_started               competitor='Fed Finance' url=https://www.fed-group.fr/fed-finance
+2026-05-18T22:29:53.008515Z [info     ] spa_mock_fallback              competitor='Fed Finance' reason='Rebranded to fed-group.fr — JavaScript SPA'
+2026-05-18T22:29:53.008559Z [info     ] scraping_completed             competitor='Fed Finance' job_count=0
+2026-05-18T22:29:53.009019Z [info     ] using_mock_data                competitor='Fed Finance' reason=None
+2026-05-18T22:29:53.013628Z [info     ] competitor_scraped             competitor='Fed Finance' jobs_added=1 total_jobs=3
+INFO:     127.0.0.1:53520 - "POST /api/pipeline/scrape HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53593 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53596 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53605 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53607 - "GET /api/competitors HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53609 - "GET /api/competitors HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53611 - "GET /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53613 - "GET /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53616 - "GET /api/companies/matches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53619 - "GET /api/companies/matches HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53622 - "GET /api/companies/priorities HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53625 - "GET /api/companies/priorities HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53628 - "GET /api/briefs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53631 - "GET /api/briefs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53634 - "GET /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53637 - "GET /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53641 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53644 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53647 - "GET /api/competitors HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53650 - "GET /api/competitors HTTP/1.1" 200 OK
+2026-05-18T22:37:51.889767Z [info     ] scraping_started               competitor='Michael Page' url=https://www.michaelpage.fr/jobs/france
+HTTP Request: GET https://www.michaelpage.fr/jobs/france "HTTP/1.1 200 OK"
+2026-05-18T22:38:06.781810Z [info     ] michaelpage_parsed             jobs_found=0
+2026-05-18T22:38:06.781919Z [info     ] scraping_completed             competitor='Michael Page' job_count=0
+2026-05-18T22:38:06.782284Z [info     ] using_mock_data                competitor='Michael Page' reason=None
+2026-05-18T22:38:06.787693Z [info     ] competitor_scraped             competitor='Michael Page' jobs_added=0 total_jobs=4
+2026-05-18T22:38:06.791276Z [info     ] scraping_started               competitor=Hays url=https://www.hays.fr/
+2026-05-18T22:38:06.791312Z [info     ] spa_mock_fallback              competitor=Hays reason='JavaScript SPA — no static job listing HTML'
+2026-05-18T22:38:06.791800Z [info     ] scraping_completed             competitor=Hays job_count=0
+2026-05-18T22:38:06.791859Z [info     ] using_mock_data                competitor=Hays reason=None
+2026-05-18T22:38:06.793090Z [info     ] competitor_scraped             competitor=Hays jobs_added=0 total_jobs=3
+2026-05-18T22:38:06.796175Z [info     ] scraping_started               competitor='Robert Half' url=https://www.roberthalf.com/fr/fr/offres-emploi
+2026-05-18T22:38:06.796221Z [info     ] spa_mock_fallback              competitor='Robert Half' reason='JavaScript SPA — React app, no static HTML jobs'
+2026-05-18T22:38:06.796249Z [info     ] scraping_completed             competitor='Robert Half' job_count=0
+2026-05-18T22:38:06.796297Z [info     ] using_mock_data                competitor='Robert Half' reason=None
+2026-05-18T22:38:06.797437Z [info     ] competitor_scraped             competitor='Robert Half' jobs_added=0 total_jobs=3
+2026-05-18T22:38:06.800110Z [info     ] scraping_started               competitor='Robert Walters' url=https://www.robertwalters.fr/
+2026-05-18T22:38:06.800141Z [info     ] spa_mock_fallback              competitor='Robert Walters' reason='Returns 403 Forbidden for scrapers'
+2026-05-18T22:38:06.800166Z [info     ] scraping_completed             competitor='Robert Walters' job_count=0
+2026-05-18T22:38:06.800207Z [info     ] using_mock_data                competitor='Robert Walters' reason=None
+2026-05-18T22:38:06.801276Z [info     ] competitor_scraped             competitor='Robert Walters' jobs_added=0 total_jobs=3
+2026-05-18T22:38:06.804009Z [info     ] scraping_started               competitor=Uptoo url=https://uptoo.fr/
+2026-05-18T22:38:06.804042Z [info     ] spa_mock_fallback              competitor=Uptoo reason='JavaScript SPA — job paths return 404 to scrapers'
+2026-05-18T22:38:06.804076Z [info     ] scraping_completed             competitor=Uptoo job_count=0
+2026-05-18T22:38:06.804129Z [info     ] using_mock_data                competitor=Uptoo reason=None
+2026-05-18T22:38:06.805334Z [info     ] competitor_scraped             competitor=Uptoo jobs_added=0 total_jobs=3
+2026-05-18T22:38:06.807910Z [info     ] scraping_started               competitor=Rocket4Sales url=https://rocket4sales.com
+2026-05-18T22:38:06.807942Z [info     ] spa_mock_fallback              competitor=Rocket4Sales reason='JavaScript SPA — root domain, jobs not in static HTML'
+2026-05-18T22:38:06.807975Z [info     ] scraping_completed             competitor=Rocket4Sales job_count=0
+2026-05-18T22:38:06.808024Z [info     ] using_mock_data                competitor=Rocket4Sales reason=None
+2026-05-18T22:38:06.808972Z [info     ] competitor_scraped             competitor=Rocket4Sales jobs_added=0 total_jobs=2
+2026-05-18T22:38:06.811628Z [info     ] scraping_started               competitor='TPC Recrutement' url=https://www.tpcrecrutement.fr/
+2026-05-18T22:38:06.811658Z [info     ] spa_mock_fallback              competitor='TPC Recrutement' reason='Domain unreliable — using curated mock data'
+2026-05-18T22:38:06.811690Z [info     ] scraping_completed             competitor='TPC Recrutement' job_count=0
+2026-05-18T22:38:06.811742Z [info     ] using_mock_data                competitor='TPC Recrutement' reason=None
+2026-05-18T22:38:06.812662Z [info     ] competitor_scraped             competitor='TPC Recrutement' jobs_added=0 total_jobs=2
+2026-05-18T22:38:06.815210Z [info     ] scraping_started               competitor='Valorem Partners' url=https://www.valorempartners.com/offres/
+HTTP Request: GET https://www.valorempartners.com/offres/ "HTTP/1.1 200 OK"
+2026-05-18T22:38:07.528752Z [info     ] valorempartners_parsed         jobs_found=0
+2026-05-18T22:38:07.529040Z [info     ] scraping_completed             competitor='Valorem Partners' job_count=0
+2026-05-18T22:38:07.529650Z [info     ] using_mock_data                competitor='Valorem Partners' reason=None
+2026-05-18T22:38:07.535705Z [info     ] competitor_scraped             competitor='Valorem Partners' jobs_added=0 total_jobs=2
+2026-05-18T22:38:07.543721Z [info     ] scraping_started               competitor='CPA Partners' url=https://www.cpa-partners.fr/
+2026-05-18T22:38:07.543879Z [info     ] spa_mock_fallback              competitor='CPA Partners' reason='Domain unreliable — using curated mock data'
+2026-05-18T22:38:07.543966Z [info     ] scraping_completed             competitor='CPA Partners' job_count=0
+2026-05-18T22:38:07.544139Z [info     ] using_mock_data                competitor='CPA Partners' reason=None
+2026-05-18T22:38:07.547073Z [info     ] competitor_scraped             competitor='CPA Partners' jobs_added=0 total_jobs=2
+2026-05-18T22:38:07.553895Z [info     ] scraping_started               competitor='Fed Finance' url=https://www.fed-group.fr/fed-finance
+2026-05-18T22:38:07.553990Z [info     ] spa_mock_fallback              competitor='Fed Finance' reason='Rebranded to fed-group.fr — JavaScript SPA'
+2026-05-18T22:38:07.554046Z [info     ] scraping_completed             competitor='Fed Finance' job_count=0
+2026-05-18T22:38:07.554162Z [info     ] using_mock_data                competitor='Fed Finance' reason=None
+2026-05-18T22:38:07.556629Z [info     ] competitor_scraped             competitor='Fed Finance' jobs_added=0 total_jobs=3
+INFO:     127.0.0.1:53721 - "POST /api/pipeline/scrape HTTP/1.1" 200 OK
+2026-05-18T22:38:07.614621Z [info     ] llm_client_initialized         model=gemini-1.5-flash provider=gemini
+2026-05-18T22:38:07.618730Z [info     ] embeddings_initialized         model=gemini-embedding-2 provider=gemini
+/Users/danielabig/Desktop/KlusAI-TechnicalChallenge/backend/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-18T22:38:07.832842Z [info     ] pipeline_start                 batch_size=2 remaining_after_run=8 total_unprocessed=10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/embeddings "HTTP/1.1 200 OK"
+2026-05-18T22:38:08.823058Z [info     ] embedding_stored               job_id=ba8998d5-89e2-4d9c-8578-6ebf0dbe5b56
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/embeddings "HTTP/1.1 200 OK"
+Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-05-18T22:38:09.281479Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Analyze this job posting from recruitment agency "Michael Page" and identify the likely hiring compa'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:38:18.224028Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Analyze this job posting from recruitment agency "Michael Page" and identify the likely hiring compa'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:38:26.487862Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Analyze this job posting from recruitment agency "Michael Page" and identify the likely hiring compa'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:38:26.756620Z [error    ] company_match_failed           error="Error code: 404 - [{'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1main, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}]"
+2026-05-18T22:38:26.758115Z [info     ] job_processed                  company='Unknown SaaS (Paris, France)' confidence=25.0 job_id=ba8998d5-89e2-4d9c-8578-6ebf0dbe5b56
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/embeddings "HTTP/1.1 200 OK"
+2026-05-18T22:38:32.291835Z [info     ] embedding_stored               job_id=3de16ac6-40c7-45e0-a92c-a8f04b601855
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/embeddings "HTTP/1.1 200 OK"
+2026-05-18T22:38:32.798668Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Analyze this job posting from recruitment agency "Hays" and identify the likely hiring company:\n\nJOB'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:38:41.055401Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Analyze this job posting from recruitment agency "Hays" and identify the likely hiring company:\n\nJOB'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:38:49.335822Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Analyze this job posting from recruitment agency "Hays" and identify the likely hiring company:\n\nJOB'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:38:49.608930Z [error    ] company_match_failed           error="Error code: 404 - [{'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1main, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}]"
+2026-05-18T22:38:49.611859Z [info     ] job_processed                  company='Unknown Supply Chain Tech / DevOps (Lyon, France (Remote))' confidence=25.0 job_id=3de16ac6-40c7-45e0-a92c-a8f04b601855
+2026-05-18T22:38:54.640197Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview="Company: Unknown SaaS (Paris, France)\nPriority Score: 57.4/100\nScoring Breakdown: {'role_relevance':"
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:39:02.913312Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview="Company: Unknown SaaS (Paris, France)\nPriority Score: 57.4/100\nScoring Breakdown: {'role_relevance':"
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:39:11.178116Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview="Company: Unknown SaaS (Paris, France)\nPriority Score: 57.4/100\nScoring Breakdown: {'role_relevance':"
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:39:11.469132Z [warning  ] rationale_generation_failed    error="Error code: 404 - [{'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1main, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}]"
+2026-05-18T22:39:16.485596Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Company: Unknown Supply Chain Tech / DevOps (Lyon, France (Remote))\nPriority Score: 45.6/100\nScoring'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:39:24.751227Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Company: Unknown Supply Chain Tech / DevOps (Lyon, France (Remote))\nPriority Score: 45.6/100\nScoring'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:39:33.002635Z [info     ] llm_request                    model=gemini-1.5-flash prompt_preview='Company: Unknown Supply Chain Tech / DevOps (Lyon, France (Remote))\nPriority Score: 45.6/100\nScoring'
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-18T22:39:33.277001Z [warning  ] rationale_generation_failed    error="Error code: 404 - [{'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1main, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}]"
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-05-18T22:42:34.740790Z [info     ] shutting_down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37098]
+INFO:     Stopping reloader process [37096]
